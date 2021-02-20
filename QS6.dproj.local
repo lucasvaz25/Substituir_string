@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/10/06 23:05:13.000.891,=C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/12 19:52:21.000.375,=C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/20 18:50:48.000.979,=C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/20 18:51:15.000.072,C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Vaz\Desktop\Subs\ufrm_main.dfm</Transaction>
+    <Transaction>2021/02/20 18:51:15.000.072,C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Vaz\Desktop\Subs\ufrm_main.pas</Transaction>
+    <Transaction>2021/02/20 18:51:28.000.489,C:\Users\Vaz\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Vaz\Desktop\Subs\QS6.dproj</Transaction>
+    <Transaction>2021/02/20 18:52:40.000.855,=C:\Users\Vaz\Desktop\Subs\uISubstitui.pas</Transaction>
+    <Transaction>2021/02/20 18:52:40.000.863,=C:\Users\Vaz\Desktop\Subs\uSubstitui.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

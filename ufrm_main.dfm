@@ -1,0 +1,72 @@
+object frm_main: Tfrm_main
+  Left = 0
+  Top = 0
+  Caption = 'main'
+  ClientHeight = 253
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object SpeedButton1: TSpeedButton
+    Left = 160
+    Top = 144
+    Width = 105
+    Height = 30
+    Caption = 'Substituir'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = SpeedButton1Click
+  end
+  object edStr: TLabeledEdit
+    Left = 24
+    Top = 40
+    Width = 369
+    Height = 21
+    EditLabel.Width = 14
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Str'
+    TabOrder = 0
+  end
+  object edResultado: TLabeledEdit
+    Left = 32
+    Top = 200
+    Width = 361
+    Height = 21
+    EditLabel.Width = 48
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Resultado'
+    TabOrder = 1
+  end
+  object edVelho: TLabeledEdit
+    Left = 24
+    Top = 96
+    Width = 121
+    Height = 21
+    EditLabel.Width = 26
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Velho'
+    TabOrder = 2
+  end
+  object edNovo: TLabeledEdit
+    Left = 272
+    Top = 96
+    Width = 121
+    Height = 21
+    EditLabel.Width = 25
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Novo'
+    TabOrder = 3
+  end
+end

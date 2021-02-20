@@ -1,0 +1,54 @@
+unit uSubstitui;
+
+interface
+
+uses
+  UISubstitui;
+
+type
+  TSubstitui = class( TInterfacedObject, ISubstitui )
+  public
+    function Substituir( Str, Velho, Novo: String ): String;
+  end;
+
+implementation
+
+
+{ TSubstitui }
+
+function TSubstitui.Substituir( Str, Velho, Novo: String ): String;
+var
+  I, J, N, Tam: Integer;
+  Aux, WNova: String;
+  Achou: Boolean;
+  WRestante: String;
+begin
+  Tam   := Length( Velho );
+  I     := 1;
+  WNova := Str;
+  Achou := False;
+  while ( not Achou ) and ( I < Length( Str ) + 1 ) do
+  begin
+    Achou := False;
+    Aux   := '';
+    for J := 0 to Tam - 1 do
+      Aux := Aux + Str[ I + J ];
+    if Aux = Velho then
+    begin
+      Achou       := True;
+      WNova       := '';
+      WRestante   := '';
+      for N       := 1 to I - 1 do
+        WNova     := WNova + Str[ N ];
+      WNova       := WNova + Novo;
+      for N       := I + J to Length( Str ) do
+        WRestante := WRestante + Str[ N ];
+    end;
+    Inc( I );
+  end;
+  if WRestante <> '' then
+    WRestante := Substituir( WRestante, Velho, Novo );
+  Result      := WNova + WRestante;
+end;
+
+end.
